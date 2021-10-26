@@ -27,7 +27,7 @@ checkEmail.addEventListener("click", function () {
   } else {
     //   Controllare se la mail inserita è nella lista(Array) userEmail
     let userFound = false;
-    for (let i = 0; i < userEmail.lenght; i++) {
+    for (let i = 0; i < userEmail.length; i++) {
       if (userEmail[i] === user) {
         userFound = true;
         break;
