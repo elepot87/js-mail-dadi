@@ -40,3 +40,31 @@ checkEmail.addEventListener("click", function () {
     }
   }
 });
+
+// Gioco dei dadi
+// Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
+// Stabilire il vincitore, in base a chi fa il punteggio più alto.
+
+const btnPlay = document.querySelector(".btn-dice");
+
+btnPlay.addEventListener("click", function () {
+  let num1 = Math.floor(Math.random() * 6 + 1);
+
+  document.getElementById(
+    "casuale1"
+  ).innerHTML = `Numero casuale dell'utente ${num1}`;
+
+  let num2 = Math.floor(Math.random() * 6 + 1);
+
+  document.getElementById(
+    "casuale2"
+  ).innerHTML = `Numero casuale del computer ${num2}`;
+
+  if (num1 > num2) {
+    document.getElementById("sfida").innerHTML = `Hai vinto!`;
+  } else if (num1 < num2) {
+    document.getElementById("sfida").innerHTML = `Hai perso!`;
+  } else {
+    document.getElementById("sfida").innerHTML = `Pareggio!`;
+  }
+});

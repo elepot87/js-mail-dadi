@@ -18,3 +18,19 @@ div.container {
   border: 0.8px solid #000;
   padding: 3px 10px;
 }
+
+.btn-dice {
+  margin: 50px;
+  padding: 3px 10px;
+}
+
+#casuale1,
+#casuale2 {
+  margin: 20px 50px;
+}
+
+#sfida {
+  margin: 20px 50px;
+  font-weight: 600;
+  color: red;
+}
